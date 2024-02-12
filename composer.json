@@ -1,0 +1,20 @@
+{
+    "name": "vendor/dynamic-folder-create",
+    "description": "Create dynamic folder at storage or any location",
+    "type": "library",
+    "require": {
+        "backpack/filemanager": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\DynamicFolderCreate\\": "src/",
+            "Sagnikd\\Inspire\\Folder": "src/Classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sagnik Dey",
+            "email": "sagnikcoold@gmail.com"
+        }
+    ]
+}

@@ -6,6 +6,9 @@
 ## Installation
 >Please follow this steps, and also refer the code blocks for ths setup using php dependency  manager (composer).
 Open terminal and run this command.
+```sh
+$ composer install
+```
 
 ```sh
 $ composer require sagnikrivud/php-folderaspire

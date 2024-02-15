@@ -22,5 +22,5 @@ Use the Service Provider class at PHP file after auto  loading configuration:
 require __DIR__ . '/vendor/autoload.php';
 ```
 ```php
-use  SagnikRivud\FolderAspire\ServiceProvider\Folder;
+use  Sagnikd\FolderAspire\Folder;
 ```

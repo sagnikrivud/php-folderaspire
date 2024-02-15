@@ -10,4 +10,14 @@ Open terminal and run this command.
 ```sh
 $ composer require sagnikrivud/php-folderaspire
 ```
+```sh
+$ composer dump-autoload
+```
+Use the Service Provider class at PHP file after auto  loading configuration:
 
+```php
+require __DIR__ . '/vendor/autoload.php';
+```
+```php
+use  SagnikRivud\FolderAspire\ServiceProvider\Folder;
+```

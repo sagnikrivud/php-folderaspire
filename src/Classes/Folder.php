@@ -18,9 +18,13 @@ class Folder {
    * @param [type] $permission
    * @return void
    */
-  public function createDirectory($folderName, $permission)
+  public function createDirectory($directoryPath, $permission)
   {
-
+    $basePath = __DIR__;
+    if (mkdir($basePath . '/' . $directoryPath, $permission, true)) {
+      return true;
+    }
+      return false;
   }
 
   /**

@@ -8,7 +8,7 @@
 - Apache 2
 
 ## Status
-*(Under Development)
+>Under Development
 
 ## Installation
 >Please follow this steps, and also refer the code blocks for ths setup using php dependency  manager (composer).

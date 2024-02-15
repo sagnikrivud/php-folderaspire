@@ -25,9 +25,9 @@ require __DIR__ . '/vendor/autoload.php';
 use  Sagnikd\FolderAspire\Folder;
 ```
 ```php
-$folderManage = new Folder();
+$manageFolder = new Folder();
 ```
 > create a folder with permission
 ```php
-$folderManage->createDirectory('path/to/directory_name', 775);
+$manageFolder->createDirectory('path/to/directory_name', 775);
 ```

@@ -6,9 +6,9 @@ class Folder {
   /**
    * Constructor
    */
-  public function __construct()
+  public function __construct($initiaLize = null)
   {
-
+    $this->initiaLize = $initiaLize;
   }
   
   /**

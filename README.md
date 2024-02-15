@@ -17,9 +17,9 @@ $ composer install
 ```sh
 $ composer require sagnikrivud/php-folderaspire
 ```
-```sh
+<!-- ```sh
 $ composer dump-autoload
-```
+``` -->
 Use the Service Provider class at PHP file after auto  loading configuration:
 
 ```php

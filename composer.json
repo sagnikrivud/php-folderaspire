@@ -1,9 +1,10 @@
 {
-    "name": "vendor/dynamic-folder-create",
+    "name": "sagnikrivud/php-folderaspire",
     "description": "Create dynamic folder at storage or any location",
     "type": "library",
-    "keywords": ["framework", "php"],
+    "keywords": ["laravel", "php", "wordpress"],
     "license": "MIT",
+    "prefer-stable": true,
     "repositories": [
         {
             "type": "vcs",
@@ -11,12 +12,17 @@
         }
     ],
     "require": {
+        "php": "^8.0",
+        "sagnikrivud/php-folderaspire": "^1.0",
+        "symfony/console": "^4.0||^5.0||^6.0",
         "backpack/filemanager": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "Vendor\\DynamicFolderCreate\\": "src/",
-            "Sagnikd\\Inspire\\Folder": "src/Classes"
+            "Sagnikd\\Inspire\\Folder": "src/"
         }
     },
     "authors": [
@@ -24,5 +30,6 @@
             "name": "Sagnik Dey",
             "email": "sagnikcoold@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }

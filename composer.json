@@ -2,6 +2,14 @@
     "name": "vendor/dynamic-folder-create",
     "description": "Create dynamic folder at storage or any location",
     "type": "library",
+    "keywords": ["framework", "php"],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sagnikcapital/php-folderaspire"
+        }
+    ],
     "require": {
         "backpack/filemanager": "^3.0"
     },

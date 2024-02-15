@@ -35,4 +35,16 @@ class Folder {
   {
 
   }
+
+  /**
+   * Import a folder from another Parent directory
+   *
+   * @param [type] $folder
+   * @param [type] $importPath
+   * @return void
+   */
+  public function importDirectory($folder, $importPath)
+  {
+
+  }
 }

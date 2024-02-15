@@ -3,9 +3,10 @@
 - Custom PHP
 - Wordpress
 
-## Dependencies
-- PHP (8.0)
-- Apache 2
+# Versions and compatibility
+
+- [Php 8.0]() or higher is required
+- [Apache 2]()
 
 ## Status
 >Under Development

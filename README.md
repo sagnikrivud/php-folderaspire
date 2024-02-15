@@ -45,6 +45,10 @@ $manageFolder->getFolderLocation('folderName/fileName');
 ```php
 $manageFolder->recoverNamespace('folderName','path/to/folder');
 ```
+> Lock a directory
+```php
+$manageFolder->lockDirectory('folder', 'path/to/folder');
+```
 
 > Base/root directory
 ```php

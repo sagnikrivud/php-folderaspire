@@ -55,7 +55,7 @@ $manageFolder->getFolderLocation('folderName/fileName'); //Return "/FolderAspire
 
 > Get a Namespace of Class or Service provider
 ```php
-$manageFolder->recoverNamespace('folderName','path/to/folder'); //Return "App\Http\Controllers"
+$manageFolder->recoverNamespace(null,'path/to/class_file'); //Return "App\Http\Controllers"
 ```
 > Lock a directory
 ```php

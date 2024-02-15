@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "sagnikrivud/php-folderaspire": "^1.0",
         "backpack/filemanager": "^3.0"
     },
     "autoload": {

@@ -33,7 +33,7 @@ $manageFolder = new Folder();
 ```
 > create a folder with permission
 ```php
-$manageFolder->createDirectory('path/to/directory_name', 775);
+$manageFolder->createDirectory('path/to/directory_name', 775); //Return true/false
 ```
 > Import directory from an existing parent directory
 ```php
@@ -42,7 +42,7 @@ $manageFolder->importDirectory('source/dir','destination/dir');
 
 > Get proper location or Path of a Folder or File
 ```php
-$manageFolder->getFolderLocation('folderName/fileName');
+$manageFolder->getFolderLocation('folderName/fileName'); //Return "/FolderAspire/Config/Label.php"
 ```
 
 > Get a Namespace of Class or Service provider

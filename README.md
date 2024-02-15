@@ -9,7 +9,7 @@
 
 ## Installation
 >Please follow this steps, and also refer the code blocks for ths setup using php dependency  manager (composer).
-Open terminal and run this command.
+Open terminal and run this command, but this is need to remember that the user file or folder write permission should be given under same group, like user: sudo and group: www-data
 
 >in composer.json under require you can directly write "sagnikrivud/php-folderaspire" under require and run:
 ```sh

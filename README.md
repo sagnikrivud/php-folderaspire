@@ -3,6 +3,10 @@
 - Custom PHP
 - Wordpress
 
+## Dependencies
+- PHP (8.0)
+- Apache 2
+
 ## Installation
 >Please follow this steps, and also refer the code blocks for ths setup using php dependency  manager (composer).
 Open terminal and run this command.

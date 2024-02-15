@@ -41,6 +41,11 @@ $manageFolder->importDirectory('source/dir','destination/dir');
 $manageFolder->getFolderLocation('folderName/fileName');
 ```
 
+> Get a Namespace of Class or Service provider
+```php
+$manageFolder->recoverNamespace('folderName','path/to/folder');
+```
+
 > Base/root directory
 ```php
 'Base' => env('BASE_ROOT', __DIR__),

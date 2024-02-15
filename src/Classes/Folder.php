@@ -58,4 +58,16 @@ class Folder {
   {
 
   }
+
+  /**
+   * Get appropriate namespace of an Class file
+   *
+   * @param [type] $folder
+   * @param [type] $path
+   * @return void
+   */
+  public function recoverNamespace($folder, $path)
+  {
+
+  }
 }

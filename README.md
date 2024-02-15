@@ -7,6 +7,9 @@
 - PHP (8.0)
 - Apache 2
 
+## Status
+*(Under Development)
+
 ## Installation
 >Please follow this steps, and also refer the code blocks for ths setup using php dependency  manager (composer).
 Open terminal and run this command, but this is need to remember that the user file or folder write permission should be given under same group, like user: sudo and group: www-data

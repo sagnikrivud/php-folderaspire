@@ -4,7 +4,6 @@
     "type": "library",
     "keywords": ["laravel", "php", "wordpress"],
     "license": "MIT",
-    "minimum-stability": "dev",
     "prefer-stable": true
     "repositories": [
         {
@@ -31,5 +30,6 @@
             "name": "Sagnik Dey",
             "email": "sagnikcoold@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }

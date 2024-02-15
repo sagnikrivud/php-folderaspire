@@ -12,7 +12,7 @@ class  FolderServiceProvider extends ServiceProvider {
     public function boot()
     {
         $this->publishes([
-            __DIR__.'../Config/Label.php' => config_path('../config/folder.php'),
+            __DIR__.'../Config/Label.php' => config_path('folder.php'),
         ], 'config');
     }
 

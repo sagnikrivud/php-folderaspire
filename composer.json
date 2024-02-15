@@ -7,7 +7,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/sagnikcapital/php-folderaspire"
+            "url": "https://github.com/sagnikrivud/php-folderaspire"
         }
     ],
     "require": {

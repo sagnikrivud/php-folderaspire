@@ -23,4 +23,6 @@ require __DIR__ . '/vendor/autoload.php';
 ```
 ```php
 use  Sagnikd\FolderAspire\Folder;
+
+$folderManage = new Folder();
 ```

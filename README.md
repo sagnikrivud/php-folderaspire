@@ -36,6 +36,11 @@ $manageFolder->createDirectory('path/to/directory_name', 775);
 $manageFolder->importDirectory('source/dir','destination/dir');
 ```
 
+> Get proper location or Path of a Folder or File
+```php
+$manageFolder->getFolderLocation('folderName/fileName');
+```
+
 > Base/root directory
 ```php
 'Base' => env('BASE_ROOT', __DIR__),

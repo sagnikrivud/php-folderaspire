@@ -47,4 +47,15 @@ class Folder {
   {
 
   }
+
+  /**
+   * Search a folder under a entire parent directory and return Path 
+   *
+   * @param [type] $folder
+   * @return void
+   */
+  public function getFolderLocation($folderName)
+  {
+
+  }
 }

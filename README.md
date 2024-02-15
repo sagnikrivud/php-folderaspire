@@ -31,3 +31,7 @@ $manageFolder = new Folder();
 ```php
 $manageFolder->createDirectory('path/to/directory_name', 775);
 ```
+> Base/root directory
+```php
+'Base' => env('BASE_ROOT', __DIR__),
+```

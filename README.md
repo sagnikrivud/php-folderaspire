@@ -27,3 +27,7 @@ use  Sagnikd\FolderAspire\Folder;
 ```php
 $folderManage = new Folder();
 ```
+> create a folder with permission
+```php
+$folderManage->createDirectory('path/to/directory_name', 775);
+```

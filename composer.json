@@ -2,7 +2,7 @@
     "name": "sagnikrivud/php-folderaspire",
     "description": "Create dynamic folder at storage or any location",
     "type": "library",
-    "keywords": ["framework", "php"],
+    "keywords": ["laravel", "php", "wordpress"],
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true

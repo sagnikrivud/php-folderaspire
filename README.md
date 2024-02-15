@@ -47,11 +47,11 @@ $manageFolder->getFolderLocation('folderName/fileName');
 
 > Get a Namespace of Class or Service provider
 ```php
-$manageFolder->recoverNamespace('folderName','path/to/folder');
+$manageFolder->recoverNamespace('folderName','path/to/folder'); //Return "App\Http\Controllers"
 ```
 > Lock a directory
 ```php
-$manageFolder->lockDirectory('folder', 'path/to/folder');
+$manageFolder->lockDirectory('folder', 'path/to/folder'); //Return true/false
 ```
 
 > Base/root directory

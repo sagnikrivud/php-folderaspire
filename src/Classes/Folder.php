@@ -33,7 +33,12 @@ class Folder {
    */
   public function lockDirectory($folderName,  $lockType = 'exclusive', $path)
   {
-
+    $folderPath = $path . '/' . $folderName;
+    $desiredPermissions = ($lockType === 'exclusive') ? 0700 : 0500;
+    if (chmod($folderPath, $desiredPermissions)) {
+      return true;
+    }
+      return false;
   }
 
   /**
@@ -43,9 +48,28 @@ class Folder {
    * @param [type] $importPath
    * @return void
    */
-  public function importDirectory($folder, $importPath)
+  public function importDirectory($sourceFolder, $importPath)
   {
-
+    $destinationFolder = $importPath;
+    if (!is_dir($destinationFolder)) {
+      mkdir($destinationFolder, 0775, true);
+    }
+    $iterator = new RecursiveIteratorIterator(
+      new RecursiveDirectoryIterator($sourceFolder, RecursiveDirectoryIterator::SKIP_DOTS),
+      RecursiveIteratorIterator::SELF_FIRST
+    );
+    foreach ($iterator as $item) {
+      $target = $destinationFolder . '/' . $iterator->getSubPathName();
+      // Copy files
+      if ($item->isFile()) {
+          copy($item, $target);
+      }
+      // Create directories
+      elseif ($item->isDir()) {
+          mkdir($target);
+      }
+    }
+    return $destinationFolder;
   }
 
   /**
@@ -54,9 +78,17 @@ class Folder {
    * @param [type] $folder
    * @return void
    */
-  public function getFolderLocation($folderName)
+  public function getFolderLocation($directory = null, $filename = null)
   {
-
+    $basePath = __DIR__;
+    if (!empty($directory) && is_dir($directory)) {
+      // If a valid directory is provided, search for the filename in the directory and its subdirectories
+      $address = glob($directory . '/**/' . $filename, GLOB_BRACE);
+    } elseif (!empty($filename) && is_file($filename)) {
+      // If a valid filename is provided, search for the filename in the current directory and its subdirectories
+      $address = glob($basePath . '/**/' . $filename, GLOB_BRACE);
+    }
+      return $address;
   }
 
   /**
@@ -66,8 +98,10 @@ class Folder {
    * @param [type] $path
    * @return void
    */
-  public function recoverNamespace($folder, $path)
+  public function recoverNamespace($folder = null, $classFile)
   {
-
+    $reflection = new ReflectionClass($classFile);
+    $namespace = $reflection->getNamespaceName();
+    return $namespace;
   }
 }

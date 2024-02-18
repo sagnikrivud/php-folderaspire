@@ -63,6 +63,10 @@ $manageFolder->recoverNamespace(null,'path/to/class_file'); //Return "App\Http\C
 ```php
 $manageFolder->lockDirectory('folder', 'path/to/folder'); //Return true/false
 ```
+> Remove folder or File
+```php
+$manageFolder->removeFileOrDirectory('patha/to/file_or_direcory_name'); //
+```
 
 > Base/root directory
 ```php

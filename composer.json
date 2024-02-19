@@ -1,6 +1,7 @@
 {
     "name": "sagnikrivud/php-folderaspire",
     "description": "Create dynamic folder at storage or any location",
+    "homepage": "https://github.com/sagnikrivud/php-folderaspire",
     "type": "library",
     "keywords": ["php", "wordpress"],
     "license": "MIT",

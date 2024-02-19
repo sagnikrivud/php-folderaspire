@@ -9,6 +9,7 @@
 
 - [Php 8.0]() or higher is required
 - [Apache 2]()
+- [Composer 2.0]()
 
 ## Status
 ### <img src="https://image.similarpng.com/very-thumbnail/2021/06/Hazard-warning-attention-sign-with-exclamation-mark-symbol-on-transparent-background-PNG.png" alt="Note" width="18" title="Please check status">Under Development

@@ -1,5 +1,5 @@
 <?php
-namespace Sagnikd\FolderAspire\Src\Contracts;
+namespace Sagnikd\FolderAspire\Contracts;
 
 /**
  * Interface FolderContracts

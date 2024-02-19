@@ -65,7 +65,7 @@ $manageFolder->lockDirectory('folder', 'path/to/folder'); //Return true/false
 ```
 > Remove folder or File
 ```php
-$manageFolder->removeFileOrDirectory('patha/to/file_or_direcory_name'); //
+$manageFolder->removeFileOrDirectory('patha/to/file_or_direcory_name'); // Return true/false
 ```
 
 > Base/root directory

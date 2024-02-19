@@ -1,7 +1,7 @@
 <?php
 
-namespace Nilgems\PhpTextract\Exceptions;
+namespace Sagnikd\FolderAspire\Exceptions;
 
 class FolderAspireException extends Exception {
-  
+
 }

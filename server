@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+// Check if the PHP version is at least 5.4
+if (!version_compare(PHP_VERSION, '8.0') < 0) {
+    fwrite(STDERR, "PHP 8.0 or above is required to run the built-in server.\n");
+    exit(1);
+}
+
+$host = 'localhost';
+$port = 8001;
+
+// Get the command-line arguments
+$args = $_SERVER['argv'];
+
+// Check if a custom host and/or port are specified
+if (count($args) > 1) {
+    $host = $args[1];
+    $port = $args[2] ?? 8001;
+}
+
+// Start the PHP development server
+$command = sprintf('php -S %s:%d', $host, $port);
+system($command);

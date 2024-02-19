@@ -7,12 +7,13 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "vcs",
+            "type": "composer",
             "url": "https://github.com/sagnikrivud/php-folderaspire"
         }
     ],
     "require": {
         "php": "^8.0",
+        "sagnikrivud/php-folderaspire": "dev-master",
         "symfony/console": "^4.0||^5.0||^6.0",
         "backpack/filemanager": "^3.0"
     },

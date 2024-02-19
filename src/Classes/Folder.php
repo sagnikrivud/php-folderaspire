@@ -109,4 +109,19 @@ class Folder implements FolderContracts{
     $namespace = $reflection->getNamespaceName();
     return $namespace;
   }
+
+  /**
+   * Remove file or directory
+   *
+   * @param [type] $fileOrDir
+   * @return boolean
+   */
+  public function removeFileOrDirectory($fileOrDir): bool
+  {
+    if (!empty($fileOrDir) && is_dir($fileOrDir)) {
+      rmdir($fileOrDir);
+    } elseif (is_file($fileOrDir)) {
+      unlink($fileOrDir);
+    }
+  }
 }

@@ -49,4 +49,12 @@ interface FolderContracts {
    * @return void
    */
   public function recoverNamespace($folder = null, $classFile);
+
+  /**
+   * Remove file or directory
+   *
+   * @param [type] $fileOrDir
+   * @return boolean
+   */
+  public function removeFileOrDirectory($fileOrDir) : bool;
 }

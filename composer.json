@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sagnikd\\FolderAspire": "src/"
+            "Sagnikd\\FolderAspire\\": "src/"
         }
     },
     "authors": [

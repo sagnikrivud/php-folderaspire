@@ -1,6 +1,6 @@
 <?php
 
-namespace Sagnikd\FolderAspire;
+namespace Sagnikd\FolderAspire\Classes;
 use Sagnikd\FolderAspire\Src\Contracts\FolderContracts;
 
 class Folder implements FolderContracts{

@@ -30,5 +30,5 @@
             "email": "sagnikcoold@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

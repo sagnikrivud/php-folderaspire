@@ -15,6 +15,7 @@ class  FolderServiceProvider extends ServiceProvider {
         $this->publishes([
             __DIR__.'../Config/Label.php' => config_path('Label.php'),
         ], 'Lebel');
+        $this->loadTranslationsFrom(__DIR__.'../lang', 'courier');
     }
 
     /**

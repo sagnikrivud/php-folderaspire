@@ -36,7 +36,7 @@ class Folder implements FolderContracts{
    * @param [type] $path
    * @return void
    */
-  public function lockDirectory($folderName,  $lockType = 'exclusive', $path)
+  public function lockDirectory($folderName,  $lockType = 'exclusive', $path): bool
   {
     $folderPath = $path . '/' . $folderName;
     $desiredPermissions = ($lockType === 'exclusive') ? 0700 : 0500;

@@ -37,7 +37,7 @@ Use the Service Provider class at PHP file after auto  loading configuration:
 require __DIR__ . '/vendor/autoload.php';
 ```
 ```php
-use  Sagnikd\FolderAspire\Folder;
+use  Sagnikd\FolderAspire\Classes\Folder;
 ```
 ```php
 $manageFolder = new Folder();
